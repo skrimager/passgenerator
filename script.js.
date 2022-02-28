@@ -1,0 +1,44 @@
+// Assignment code here
+
+var password=document.getElementById("password")
+
+// set a length up to 27 chars and define characters to use //
+
+var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPRSTUVWXYZ12345678901234567890!@#$%^&*()";
+var passwordLength = < 27;
+var password = "";
+
+//  need a loop for random chars //
+
+for (var i = 0; i ,<= passwordLength; i++) {
+  var randomNumber = Math.floor(math.random() *chars.length);
+  password +=chars.substring(randomNumber, randomNumber +1);
+}
+
+
+
+// Get references to the #generate element
+var generateBtn = document.querySelector("#generate");
+
+document.getElementById("password").value = passowrd;
+
+
+
+console.log(String.fromCharCode)
+
+
+
+
+
+
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+
+}
+
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
